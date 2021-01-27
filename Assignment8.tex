@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{longtable}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\title{MICROPROCESSOR LAB}
+\author{Shubham Shrivastava}
+\date{January 2021}
+
+\begin{document}
+\maketitle
+
+\section*{Question 1}
+Construct the triangles in table:\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics{ass8p.JPG}
+    \caption{Given}
+    \label{fig:my_label}
+\end{figure}
+\section{Solution}
+(ii)This traingle can be constructed in following way\\
+$\\$
+Steps of construction:\\ 
+(i)Draw a line segment $PR$ of length 4.7 cm where $P$ is at (0,0)\\
+$\\$
+(ii)Now, we draw a line from P at an angle of 30$^\circ$  with $PR$, the line would have the equation as
+\begin{gather}
+     y = \tan(30^\circ)x
+\end{gather}
+(iii) Drawing another line from R having an equation
+\begin{equation}
+    y=-tan60^\circ
+\end{equation}
+from (i) and (ii), on solving\\
+\(\frac{x}{\sqrt{3}}\)=-\sqrt{3}(x-4.7)\\
+x=-3x + 3 * 4.7\\
+4x = 14.7\\
+x=3.67\\
+putting the value of x in (i), we get\\
+y=\(\frac{3.67}{1.732}\)\\
+y=2.12\\
+Thus Joining \textbf{P(3.67,2.12),Q(0,0),R(4.7,0)} we would obtain the required triangle
+\newpage
+\begin{figure}[h!]
+    \centering
+    \includegraphics{xyz.JPG}
+    \caption{Python}
+    \label{fig:my_label}
+\end{figure}
+\newpage
+\section*{Solution for (vi)}
+Given, PQ=2.5cm, QR=4cm, PR=3.5cm\\
+\begin{equation}
+    p = \frac{a^{2} + c^{2}-b^{2}}{2*a}
+\end{equation}
+\begin{equation}
+     q = \sqrt(c^{2}-p^{2})
+\end{equation}
+\begin{figure}[h!]
+    \centering
+    \includegraphics{bcd.JPG}
+    \caption{Python}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+
+\newpage
+\section*{Explaination for other subparts}
+$=>$(i)In subpart (i) and (iv) We know that \\
+sum of angles of a triangle = $180^\circ$
+$\\$\\
+But here, it doesn't seem so\\
+Since sum of two angles cannot be greater than $180^\circ$\\
+therefore, $\Delta$ is not possible.\\
+$\\$
+$=>$(iii)It will be constructed using the same method as we did for subpart (ii)($\Delta$ PQR)\\
+$\\$
+$=>$subparts (v), (vii),(viii)  will be constructed using the same method as we did for subpart (vi)\\
+
+
+\section*{Question 2 }
+Construct a quadrilateral ABCD such that
+BC = 4.5, AC = 5.5,CD = 5, BD = 7 and
+AD = 5.5\\
+\section*{Solution}
+Steps of constructions:\\
+Firstly, we will draw a line AC of 5.5 cm where A is at (0,0)\\
+then, taking A as center with the radius of 5.5 cm we get a circle whose equation is\\
+\begin{equation}
+    (x)^{2}+(y)^{2}=(5.5)^{2}\\
+\end{equation}
+similarly,by taking C as centre,we get\\
+\begin{equation}
+    (x-5.5)^{2}+(y-0)^{2}=(5)^{2}\\
+\end{equation}
+on solving these two equations, we get a point of intersection which is basically D of our quadrilateral\\
+\begin{gather*}
+    (x-5.5)^{2}+(y-0)^{2}=(5)^{2}\\
+    x^{2}+(5.5)^2-11x + y^{2}=25\\
+    (5.5)^2-y^{2}+(5.5)^2-11x+y^{2}=25\\
+    x=3.22\\
+    \mbox{putting the value of x in 1}\\
+    y^{2}=(5.5)^{2}-(3.2)^{2}\\
+    y=4.45\\
+\end{gather*}
+mark this point as D\\
+Now, join AD and CD\\
+then, we further proceed with taking two equations of circle by taking C and D as centers resp.\\
+\begin{equation}
+    (x-3.22)^{2}+(y-4.45)^{2}=(7)^{2}\\
+\end{equation}
+\begin{equation}
+    (x-5.5)^{2}+(y-0)^{2}=(4.5)^{2}\\
+\end{equation}
+on solving, we get\\
+x=1.68 & y=-2.37\\
+Mark this point as B and join AB and BC and we would obtain required quadrilateral\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=400pts, width=500 pts]{im8.JPG}
+    \caption{Figure generated using python}
+    \label{fig:my_label}
+\end{figure}
+
+
+\end{document}
